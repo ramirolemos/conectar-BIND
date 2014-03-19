@@ -1,0 +1,25 @@
+$ttl 38400
+miescuela.local.	IN	SOA	servicios.miescuela.local. admin.miescuela.local. (
+			1285614362
+			10800
+			3600
+			604800
+			38400 )
+miescuela.local. IN NS servicios.miescuela.local.
+servicios.miescuela.local. IN A 172.16.0.1
+mail.miescuela.local.	IN	A	172.16.0.5
+tdserver.miescuela.local. IN A 172.16.0.2
+miescuela.local. IN MX 10 srvmail.miescuela.local.
+miescuela.local. 3600 IN TXT " \"v=spf1 mx mx:srvmail.miescuela.local -all\""
+miescuela.local. 3600 IN TXT "\"v=spf1 ip4:172.16.0.5 -all\""
+host.miescuela.local. IN A 172.16.0.10
+webmail.miescuela.local. IN CNAME srvmail.miescuela.local.
+www.miescuela.local. IN CNAME servicios.miescuela.local.
+services.miescuela.local. IN CNAME servicios.miescuela.local.
+server1.miescuela.local. IN CNAME servicios.miescuela.local.
+updates.miescuela.local. IN A 172.16.0.4
+ldap.miescuela.local.	IN	A	172.16.0.3
+updates-win.miescuela.local. IN CNAME updates.miescuela.local.
+updates-lin.miescuela.local. IN CNAME updates.miescuela.local.
+fusionserv.miescuela.local. IN CNAME updates.miescuela.local.
+wpad.miescuela.local. IN CNAME servicios.miescuela.local.

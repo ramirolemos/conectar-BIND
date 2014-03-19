@@ -1,0 +1,14 @@
+$ttl 38400
+16.172.in-addr.arpa.	IN	SOA	servicios.miescuela.local. admin.miescuela.local. (
+			1285614641
+			10800
+			3600
+			604800
+			38400 )
+16.172.in-addr.arpa. IN NS servicios.miescuela.local.
+1.0.16.172.in-addr.arpa. IN PTR servicios.miescuela.local.
+2.0.16.172.in-addr.arpa. IN PTR tdserver.miescuela.local.
+10.0.16.172.in-addr.arpa. IN PTR host.miescuela.local.
+4.0.16.172.in-addr.arpa. IN PTR updates.miescuela.local.
+5.0.16.172.in-addr.arpa.	IN	PTR	mail.miescuela.local.
+3.0.16.172.in-addr.arpa.	IN	PTR	ldap.miescuela.local.
